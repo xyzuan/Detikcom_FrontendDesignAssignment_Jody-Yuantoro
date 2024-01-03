@@ -1,0 +1,12 @@
+.galery-section {
+  margin-top: 114px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+@media (min-width: 768px) {
+  .galery-section {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}

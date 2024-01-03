@@ -1,0 +1,28 @@
+nav {
+  position: fixed;
+  z-index: 2;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-burger {
+  display: flex;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
+}

@@ -1,0 +1,37 @@
+.hero-section {
+  height: 100vh;
+  background-image: url("/assets/images/bg_hero_mobile.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-logo {
+  width: 327px;
+  height: 107px;
+  margin-top: 179px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 34px;
+  margin-right: 34px;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/images/bg_hero_desktop.png");
+  }
+
+  .hero-logo {
+    width: 686px;
+    height: 276px;
+    margin-top: 0;
+  }
+
+  .hero-container {
+    margin-left: 82px;
+  }
+}

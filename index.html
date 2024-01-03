@@ -12,28 +12,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/globals.style.css" />
+    <link rel="stylesheet" href="styles/navbar.style.css" />
+    <link rel="stylesheet" href="styles/hero.style.css" />
+    <link rel="stylesheet" href="styles/event.style.css" />
+    <link rel="stylesheet" href="styles/galery.style.css" />
+    <link rel="stylesheet" href="styles/article.style.css" />
+    <link rel="stylesheet" href="styles/footer.style.css" />
   </head>
   <body>
-    <nav
-      style="
-        position: fixed;
-        z-index: 2;
-        width: 90vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 18px;
-        margin: 0 auto;
-        margin-top: 40px;
-        border-radius: 32px;
-        background: rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);
-        backdrop-filter: blur(25px);
-        -webkit-backdrop-filter: blur(25px);
-        left: 50%;
-        transform: translateX(-50%);
-      "
-    >
+    <nav>
       <img
         href="#"
         class="navbar-brand"
@@ -41,40 +28,16 @@
         src="/assets/images/logo_detikhealth.png"
       />
 
-      <div
-        style="
-          display: flex;
-          padding: 16px;
-          background-color: rgba(255, 255, 255, 0.8);
-          border-radius: 100%;
-          backdrop-filter: blur(25px);
-          -webkit-backdrop-filter: blur(25px);
-          filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
-        "
-      >
+      <div class="nav-burger">
         <img src="/assets/svgs/icon_burger.svg" />
       </div>
     </nav>
 
     <section id="#">
-      <div
-        style="
-          height: 100vh;
-          background-image: url('/assets/images/bg_hero_mobile.png');
-          background-size: cover;
-          background-position: center;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            margin-left: 34px;
-            margin-right: 34px;
-          "
-        >
+      <div class="hero-section">
+        <div class="hero-container">
           <img
-            style="width: 367px; height: 147px; margin-top: 179px"
+            class="hero-logo"
             src="/assets/images/logo_event_sudirmanrun2023.png"
           />
           <button
@@ -105,144 +68,186 @@
     </section>
 
     <section style="display: flex; flex-direction: column; align-items: center">
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          border-radius: 16px;
-          padding: 32px;
-          margin: 18px;
-          background: linear-gradient(237deg, #59ffb9 -30.09%, #326cff 71.21%);
-        "
-      >
-        <div class="embed-responsive embed-responsive-4by3">
-          <img
-            style="width: 100%"
-            src="/assets/images/map.png"
-            class="embed-responsive-item"
-            alt="Map"
-          />
-        </div>
+      <div class="event-section">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border-radius: 16px;
+            padding: 32px;
+            margin: 18px;
+            background: linear-gradient(
+              237deg,
+              #59ffb9 -30.09%,
+              #326cff 71.21%
+            );
+          "
+        >
+          <div class="embed-responsive embed-responsive-4by3">
+            <img
+              style="width: 100%"
+              src="/assets/images/map.png"
+              class="embed-responsive-item"
+              alt="Map"
+            />
+          </div>
 
-        <div>
-          <h3
-            style="
-              color: #fff;
-              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              font-size: 24px;
-              font-style: italic;
-              font-weight: 900;
-              line-height: normal;
-            "
-          >
-            10K FUN RUN
-          </h3>
-          <p
-            style="
-              color: #fff;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-            "
-          >
-            Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai
-            dari Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu
-            kembali lagi ke Bundaran HI!
-          </p>
+          <div style="display: flex; flex-direction: column">
+            <h3
+              style="
+                color: #fff;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-size: 24px;
+                font-style: italic;
+                font-weight: 900;
+                line-height: normal;
+              "
+            >
+              10K FUN RUN
+            </h3>
+            <p
+              style="
+                color: #fff;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              "
+            >
+              Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari
+              dimulai dari Bundaran HI hingga Patung Pemuda Membangun di Senayan
+              lalu kembali lagi ke Bundaran HI!
+            </p>
+          </div>
         </div>
-      </div>
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          border-radius: 16px;
-          padding: 32px;
-          margin: 18px;
-          background: linear-gradient(237deg, #59ffb9 -30.09%, #326cff 71.21%);
-        "
-      >
-        <div>
-          <h3
+        <div style="display: flex; flex-direction: column">
+          <div
             style="
-              color: #fff;
-              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              font-size: 24px;
-              font-style: italic;
-              font-weight: 900;
-              line-height: normal;
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              border-radius: 16px;
+              padding: 32px;
+              margin: 18px;
+              background: linear-gradient(
+                237deg,
+                #59ffb9 -30.09%,
+                #326cff 71.21%
+              );
             "
           >
-            50+ TENANT BAZZAR
-          </h3>
-          <p
+            <div>
+              <h3
+                style="
+                  color: #fff;
+                  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                  font-size: 24px;
+                  font-style: italic;
+                  font-weight: 900;
+                  line-height: normal;
+                "
+              >
+                GRATIS DAN BERHADIAH
+              </h3>
+              <p
+                style="
+                  color: #fff;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                "
+              >
+                Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah
+                total puluhan juta serta berbagai macam doorprize yang menarik!
+              </p>
+            </div>
+          </div>
+          <div
             style="
-              color: #fff;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              border-radius: 16px;
+              padding: 32px;
+              margin: 18px;
+              background: linear-gradient(
+                237deg,
+                #59ffb9 -30.09%,
+                #326cff 71.21%
+              );
             "
           >
-            Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run
-            2023 mulai dari F&B hingga fashion
-          </p>
-        </div>
-      </div>
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          border-radius: 16px;
-          padding: 32px;
-          margin: 18px;
-          background: linear-gradient(237deg, #59ffb9 -30.09%, #326cff 71.21%);
-        "
-      >
-        <div class="embed-responsive embed-responsive-4by3">
-          <img
-            style="width: 100%"
-            src="/assets/images/map_2.png"
-            class="embed-responsive-item"
-            alt="Map"
-          />
-        </div>
+            <div>
+              <h3
+                style="
+                  color: #fff;
+                  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                  font-size: 24px;
+                  font-style: italic;
+                  font-weight: 900;
+                  line-height: normal;
+                "
+              >
+                50+ TENANT BAZZAR
+              </h3>
+              <p
+                style="
+                  color: #fff;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                "
+              >
+                Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman
+                Run 2023 mulai dari F&B hingga fashion
+              </p>
+            </div>
+          </div>
+          <div class="event-special">
+            <div class="event-special-img-container">
+              <img
+                class="square-image"
+                src="/assets/images/map_2.png"
+                alt="Map"
+              />
+            </div>
 
-        <div>
-          <h3
-            style="
-              color: #fff;
-              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              font-size: 24px;
-              font-style: italic;
-              font-weight: 900;
-              line-height: normal;
-            "
-          >
-            SPECIAL PERFORMANCE
-          </h3>
-          <p
-            style="
-              color: #fff;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-            "
-          >
-            Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan
-            lainnya!
-          </p>
+            <div>
+              <h3
+                style="
+                  color: #fff;
+                  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                  font-size: 24px;
+                  font-style: italic;
+                  font-weight: 900;
+                  line-height: normal;
+                "
+              >
+                SPECIAL PERFORMANCE
+              </h3>
+              <p
+                style="
+                  color: #fff;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                "
+              >
+                Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta
+                hiburan lainnya!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <button
         style="
           all: unset;
           width: fit-content;
-          margin-top: 65px;
           margin-bottom: 115px;
           padding-top: 15px;
           padding-bottom: 15px;
@@ -322,7 +327,7 @@
       </div>
     </section>
 
-    <section style="margin-top: 114px; padding-left: 27px; padding-right: 27px">
+    <section class="galery-section">
       <h2
         style="
           color: #212427;
@@ -404,22 +409,7 @@
       >
         ARTIKEL TERKAIT
       </h2>
-      <div
-        style="
-          color: #fff;
-          width: 100%;
-          font-size: 16px;
-          font-weight: 600;
-          display: flex;
-          margin-top: 32px;
-          margin-bottom: 50px;
-          justify-content: space-around;
-          align-items: center;
-          border-radius: 100px;
-          background: linear-gradient(239deg, #59ffb9 -37.86%, #326cff 92.79%);
-          backdrop-filter: blur(25px);
-        "
-      >
+      <div class="article-nav">
         <div
           style="
             display: flex;
@@ -460,203 +450,9 @@
           Video
         </div>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 35px">
-        <div style="display: flex; gap: 15px">
-          <div
-            style="
-              min-height: 100px;
-              min-width: 100px;
-              max-height: 100px;
-              max-width: 100px;
-              border-radius: 16px;
-              overflow: hidden;
-            "
-            class="embed-responsive embed-responsive-1by1"
-          >
-            <img
-              style="width: 100%"
-              src="/assets/images/artikel_1.png"
-              class="embed-responsive-item"
-              alt="Map"
-            />
-          </div>
-          <div>
-            <p
-              style="
-                color: #212427;
-                text-overflow: ellipsis;
-                font-size: 16px;
-                font-weight: 700;
-              "
-            >
-              Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme
-              Beberkan Prosesnya
-            </p>
-            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
-              Sabtu, 25 Nov 2023 20:00 WIB
-            </p>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 15px">
-          <div
-            style="
-              min-height: 100px;
-              min-width: 100px;
-              max-height: 100px;
-              max-width: 100px;
-              border-radius: 16px;
-              overflow: hidden;
-            "
-            class="embed-responsive embed-responsive-1by1"
-          >
-            <img
-              style="width: 100%"
-              src="/assets/images/artikel_2.png"
-              class="embed-responsive-item"
-              alt="Map"
-            />
-          </div>
-          <div>
-            <p
-              style="
-                color: #212427;
-                text-overflow: ellipsis;
-                font-size: 16px;
-                font-weight: 700;
-              "
-            >
-              Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See
-              Nature
-            </p>
-            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
-              Selasa, 28 Nov 2023 07:42 WIB
-            </p>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 15px">
-          <div
-            style="
-              min-height: 100px;
-              min-width: 100px;
-              max-height: 100px;
-              max-width: 100px;
-              border-radius: 16px;
-              overflow: hidden;
-            "
-            class="embed-responsive embed-responsive-1by1"
-          >
-            <img
-              style="width: 100%"
-              src="/assets/images/artikel_3.png"
-              class="embed-responsive-item"
-              alt="Map"
-            />
-          </div>
-          <div>
-            <p
-              style="
-                color: #212427;
-                text-overflow: ellipsis;
-                font-size: 16px;
-                font-weight: 700;
-              "
-            >
-              Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023
-            </p>
-            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
-              Minggu, 26 Nov 2023 13:04 WIB
-            </p>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 15px">
-          <div
-            style="
-              min-height: 100px;
-              min-width: 100px;
-              max-height: 100px;
-              max-width: 100px;
-              max-height: 100px;
-              border-radius: 16px;
-              overflow: hidden;
-            "
-            class="embed-responsive embed-responsive-1by1"
-          >
-            <img
-              style="width: 100%"
-              src="/assets/images/artikel_4.png"
-              class="embed-responsive-item"
-              alt="Map"
-            />
-          </div>
-          <div>
-            <p
-              style="
-                color: #212427;
-                text-overflow: ellipsis;
-                font-size: 16px;
-                font-weight: 700;
-              "
-            >
-              Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton
-              Maliq & D'essentials
-            </p>
-            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
-              Sabtu, 18 Nov 2023 17:39 WIB
-            </p>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 15px">
-          <div
-            style="
-              min-height: 100px;
-              min-width: 100px;
-              max-height: 100px;
-              max-width: 100px;
-              border-radius: 16px;
-              overflow: hidden;
-            "
-            class="embed-responsive embed-responsive-1by1"
-          >
-            <img
-              style="width: 100%"
-              src="/assets/images/artikel_5.png"
-              class="embed-responsive-item"
-              alt="Map"
-            />
-          </div>
-          <div>
-            <p
-              style="
-                color: #212427;
-                text-overflow: ellipsis;
-                font-size: 16px;
-                font-weight: 700;
-              "
-            >
-              CT Arsa Charity Fun Run 2023 Bertabur Emas
-            </p>
-            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
-              Kamis, 16 Nov 2023 16:34 WIB
-            </p>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 15px">
-          <div
-            style="
-              min-height: 100px;
-              min-width: 100px;
-              max-height: 100px;
-              max-width: 100px;
-              border-radius: 16px;
-              overflow: hidden;
-            "
-            class="embed-responsive embed-responsive-1by1"
-          >
+      <div class="article-container">
+        <div class="article-item">
+          <div class="article-item-img-container">
             <img
               style="width: 100%"
               src="/assets/images/artikel_6.png"
@@ -665,14 +461,96 @@
             />
           </div>
           <div>
-            <p
-              style="
-                color: #212427;
-                text-overflow: ellipsis;
-                font-size: 16px;
-                font-weight: 700;
-              "
-            >
+            <p>
+              Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme
+              Beberkan Prosesnya
+            </p>
+            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
+              Sabtu, 25 Nov 2023 20:00 WIB
+            </p>
+          </div>
+        </div>
+        <div class="article-item">
+          <div class="article-item-img-container">
+            <img
+              style="width: 100%"
+              src="/assets/images/artikel_1.png"
+              class="embed-responsive-item"
+              alt="Map"
+            />
+          </div>
+          <div>
+            <p>
+              Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See
+              Nature
+            </p>
+            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
+              Selasa, 28 Nov 2023 07:42 WIB
+            </p>
+          </div>
+        </div>
+        <div class="article-item">
+          <div class="article-item-img-container">
+            <img
+              style="width: 100%"
+              src="/assets/images/artikel_2.png"
+              class="embed-responsive-item"
+              alt="Map"
+            />
+          </div>
+          <div>
+            <p>Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</p>
+            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
+              Minggu, 26 Nov 2023 13:04 WIB
+            </p>
+          </div>
+        </div>
+        <div class="article-item">
+          <div class="article-item-img-container">
+            <img
+              style="width: 100%"
+              src="/assets/images/artikel_3.png"
+              class="embed-responsive-item"
+              alt="Map"
+            />
+          </div>
+          <div>
+            <p>
+              Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton
+              Maliq & D'essentials
+            </p>
+            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
+              Sabtu, 18 Nov 2023 17:39 WIB
+            </p>
+          </div>
+        </div>
+        <div class="article-item">
+          <div class="article-item-img-container">
+            <img
+              style="width: 100%"
+              src="/assets/images/artikel_4.png"
+              class="embed-responsive-item"
+              alt="Map"
+            />
+          </div>
+          <div>
+            <p>CT Arsa Charity Fun Run 2023 Bertabur Emas</p>
+            <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
+              Kamis, 16 Nov 2023 16:34 WIB
+            </p>
+          </div>
+        </div>
+        <div class="article-item">
+          <div class="article-item-img-container">
+            <img
+              style="width: 100%"
+              src="/assets/images/artikel_5.png"
+              class="embed-responsive-item"
+              alt="Map"
+            />
+          </div>
+          <div>
+            <p>
               BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta
             </p>
             <p style="color: #6c6c6c; font-size: 12px; font-weight: 500">
@@ -715,45 +593,50 @@
         color: #fff;
       "
     >
-      <img src="/assets/images/footer_top.png" />
+      <img class="footer-top-mobile" src="/assets/images/footer_top.png" />
+      <img
+        class="footer-top-desktop"
+        src="/assets/images/footer_top_desktop.png"
+      />
 
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-          margin-top: 50px;
-          align-items: center;
-          justify-content: center;
-          padding-left: 32px;
-          padding-right: 32px;
-        "
-      >
+      <div class="footer-container">
         <img
           style="height: 154px; width: 353px"
           src="/assets/images/logo_event_sudirmanrun2023_white.png"
         />
 
-        <p style="text-align: center; font-size: 16px; font-weight: 400">
-          Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh
-          Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga
-          dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan
-          hadiah utama serta doorprize dengan total puluhan juta rupiah
-        </p>
+        <div class="footer-desc-container">
+          <p class="footer-desc">
+            Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh
+            Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga
+            dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu
+            menangkan hadiah utama serta doorprize dengan total puluhan juta
+            rupiah
+          </p>
 
-        <p
-          style="
-            text-align: center;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 16px; /* 133.333% */
-            letter-spacing: 0.06px;
-          "
-        >
-          Connect With Us
-        </p>
-
+          <div class="footer-contact-container">
+            <p
+              style="
+                text-align: center;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px; /* 133.333% */
+                letter-spacing: 0.06px;
+              "
+            >
+              Connect With Us
+            </p>
+            <div style="display: flex; gap: 8px; justify-content: center">
+              <img src="/assets/images/logo_facebook.png" />
+              <img src="/assets/images/logo_x.png" />
+              <img src="/assets/images/logo_instagram.png" />
+              <img src="/assets/images/logo_linkedin.png" />
+              <img src="/assets/images/logo_youtube.png" />
+            </div>
+          </div>
+        </div>
+        <div style="height: 1px; width: 100%; background-color: white"></div>
         <p
           style="
             text-align: center;
