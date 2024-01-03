@@ -17,6 +17,16 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
 .btn-primary {
   all: unset;
   width: fit-content;
@@ -43,6 +53,14 @@ a {
 }
 
 .marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marquee img {
+  height: 144px;
+  width: 291px;
   display: flex;
   overflow: hidden;
   user-select: none;
