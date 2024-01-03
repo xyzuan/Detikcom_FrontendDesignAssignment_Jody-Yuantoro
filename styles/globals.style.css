@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
+* {
+  font-family: Montserrat;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+  animation: scroll-x var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee--vertical {
+  --mask-direction: to bottom;
+}
+
+.marquee--vertical,
+.marquee--vertical .marquee__group {
+  flex-direction: column;
+}
+
+.marquee--vertical .marquee__group {
+  animation-name: scroll-y;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(var(--scroll-start));
+  }
+  to {
+    transform: translateX(var(--scroll-end));
+  }
+}
+
+@keyframes scroll-y {
+  from {
+    transform: translateY(var(--scroll-start));
+  }
+  to {
+    transform: translateY(var(--scroll-end));
+  }
+}
+
+/* Element styles */
+.marquee svg {
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  fill: var(--color-text);
+  background: var(--color-bg-accent);
+  aspect-ratio: 16/9;
+  padding: calc(var(--size) / 10);
+  border-radius: 0.5rem;
+}
+
+.marquee--vertical svg {
+  aspect-ratio: 1;
+  width: calc(var(--size) / 1.5);
+  padding: calc(var(--size) / 6);
+}
